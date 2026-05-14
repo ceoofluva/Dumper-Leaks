@@ -1,4 +1,4 @@
-# Dumper-leaks
+# Dumper-leaks by mimic, cyanide, winzetim, Laspard and yaru
 **A LIST OF LEAKED DUMPERS**
 
 la Ilaha ilallah Muhammed rasolo Allah
