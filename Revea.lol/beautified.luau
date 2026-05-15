@@ -1,4 +1,3 @@
--- peadro beautifier
 rawset(_G, "__LARRY_PREMIUM", true)
 rawset(_G, "__LARRY_ALLOW_HOST_HTTP_FETCH", false)
 rawset(_G, "__LARRY_EMIT_LOADSTRING_FETCH_COMMENTS", false)
