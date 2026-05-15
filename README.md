@@ -5,6 +5,6 @@ la Ilaha ilallah Muhammed rasolo Allah
 
 join 45ms https://45-ms.netlify.app
 
-made with the help of:
+# made with the help of:
 
-# mimic, cyanide, winzetim, Laspard and yaru
+**mimic, cyanide, winzetim, Laspard and yaru**
