@@ -8,11 +8,11 @@ local commercial=false
 local inpath=commercial and "" or "dumps\\original\\"
 local outpath=commercial and "" or "dumps\\dumped\\"
 
-local fs = fs or require("@25msrequireluvsu/fs")
-local process = process or require("@25msrequireluvsu/process")
-local luau = luau or require("@25msrequireluvsu/luau")
-local roblox=not commercial and require("@25msrequireluvsu/roblox") or {}
-local task=require("@25msrequireluvsu/task")
+local fs = fs or require("@lune/fs")
+local process = process or require("@lune/process")
+local luau = luau or require("@lune/luau")
+local roblox=not commercial and require("@lune/roblox") or {}
+local task=require("@lune/task")
 local targetfilename=process.args[1]
 if not targetfilename then
     print("lol you didnt put a filename or luarmor link")
@@ -23,7 +23,7 @@ if not (LRMPath or fs.isFile(inpath..targetfilename)) then
     print("lol that file doesnt exist")
     return
 end
-local request=(net or require("@25msrequireluvsu/net")).request
+local request=(net or require("@lune/net")).request
 local input = LRMPath and (function()
     local cont=request({url=targetfilename:gsub("loaders","l"),method ="GET",headers={["User-Agent"]="Xeno/RobloxApp/V1.0.9"}}).body
     targetfilename=LRMPath
@@ -115,7 +115,7 @@ if false then -- insert unminified
         end
     end)
 end
--- fs.writeFile("zzRun.lua",[[local h={}local g=table.insert local _25ms=function(P)g(h,P)return P end local l,O,A,B=print,next,type,wait or task.wait local d=function(h)l(h)end local m=task and task.wait or B task.spawn(function()while m(3)do for g,P in O,h do if A(P)=="string"and h[g-1]~=P:sub(1,#P-1)then d(P)end h[g-1]=nil end end end);]]..runcode)
+-- fs.writeFile("zzRun.lua",[[local h={}local g=table.insert local _25ms=function(P)g(h,P)return P end local l,O,A,B=print,next,type,wait or task.wait local d=function(h)l(h)end local m=task and [...]
 local chunk, err = luau.load(runcode)
 if err then
     warn("BAD OMGG"..err)
