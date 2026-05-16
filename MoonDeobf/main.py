@@ -21,6 +21,6 @@ def deobfuscate_moonsec(file_path: str) -> str:
 
     code = data.get("deobfuscated_code", "")
   
-    code = code.replace("-- Deobfuscated by LeakD", "").strip()
+    code = code.replace("-- Deobfuscated by LeakD | discord.gg/qteAQmfJmP", "").strip()
 
     return code
