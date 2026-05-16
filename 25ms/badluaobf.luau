@@ -1,6 +1,6 @@
-local fs = require("@25msrequireluvsu/fs")
-local process = require("@25msrequireluvsu/process")
-local luau = require("@25msrequireluvsu/luau")
+local fs = require("@lune/fs")
+local process = require("@lune/process")
+local luau = require("@lune/luau")
 local targetfilename=process.args[1]
 local input = fs.readFile("dumps\\original\\"..targetfilename)
 
