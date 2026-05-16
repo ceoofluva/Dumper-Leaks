@@ -54,7 +54,7 @@ function AntiTamper:apply(ast, pipeline)
     local n = random(3, 65);
     local acc1 = 0;
     local acc2 = 0;
-    local pcallRet = {pcall(function() local a = ]] .. tostring(math.random(1, 2^24)) .. [[ - "]] .. RandomStrings.randomString() .. [[" ^ ]] .. tostring(math.random(1, 2^24)) .. [[ return "]] .. RandomStrings.randomString() .. [[" / a; end)};
+    local pcallRet = {pcall(function() local a = ]] .. tostring(math.random(1, 2^24)) .. [[ - "]] .. RandomStrings.randomString() .. [[" ^ ]] .. tostring(math.random(1, 2^24)) .. [[ return "]] .. RandomStrings.randomString() .. [[" / a; end)}
     local origMsg = pcallRet[2];
     local line = tonumber(gmatch(tostring(origMsg), ':(%d*):')());
     for i = 1, n do
@@ -88,7 +88,7 @@ function AntiTamper:apply(ast, pipeline)
     end
     local load=loadstring or load or getfenv(print).load or getfenv(print).loadstring;
     if not load then
-        local _,lune_luau=pcall(function()return require("@25msrequireluvsu/luau")end)
+        local _,lune_luau=pcall(function()return require("@lune/luau")end)
         load = lune_luau and lune_luau.load
     end
     local meow=true
