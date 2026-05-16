@@ -13,3 +13,7 @@ curl -fsSL https://raw.githubusercontent.com/shshshshshshhsshshhssh-png/Dumper-l
 ```bash
 pip install requests
 ```
+# run it
+```bash
+python cli.py input.lua -o output.lua
+```
