@@ -8,3 +8,5 @@ join 45ms https://45-ms.netlify.app
 # made with the help of:
 
 **mimic, cyanide, winzetim, Laspard, LSD and yaru**
+
+# ⚠️ PLEASE READ THE LICENSE!
