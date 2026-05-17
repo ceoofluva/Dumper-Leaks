@@ -1,11 +1,4 @@
--- this file is generated using FlameDumperV3 | https://discord.gg/ypVcca6cvp
-print("[Universal Reader] Starting full dump...")
-print("→ Loaded stack_4 (779733 bytes)")
-print("→ Loaded [internal] (566035 bytes)")
-print("\
-print("\
-[=== stack_4 (779733 bytes) ===]")
-print("do\
+do
     if not rawget(_G, \"_HOOKOP\") then\
         local _cw = {}\
         local _cw_max = 2000000\
@@ -28410,8 +28403,4 @@ if not rawget(_G, \"__FLAMEDUMPER_REQUIRE_ONLY\") then\
         end\
     end\
 end\
-return proxyTable")
-print("\
-[=== END OF file_dumper.lua ===]\
-")
-print("[RESULT] Full dump completed. 0 files recovered.")
+return proxyTable
